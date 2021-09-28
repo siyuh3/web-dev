@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="explore.css" rel="stylesheet"/>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
 </head>
 <body>
 <div class="wd-border">
     <div class="wd-border-offset">
-        <label for="search-text" class="wd-border-offset">
-            <input class="wd-search-bar"
-                   type="text"
-                   id="search-text"
-                   placeholder="Search Twitter"><br/>
-        </label>
+        <div id="wd-search-text"
+             class="wd-search_input">
+            <i class="fa fa-search"
+               id="i-advanced-search-i">
+            </i>
+            <input type="text"
+                   id="i-advanced-search"
+                   placeholder="Search Twitter">
+            <span>
+                <a href="explore-settings.html">
+                    <i style="font-size: 24px "
+                       class="fa fa-gear wd-white-color">
+                    </i>
+                </a>
+            </span>
+        </div>
+
     </div>
     <div class="wd-padding-all-around-16">
         <a href="explore.html" class="wd-other-link">For you</a>
