@@ -21,7 +21,7 @@ body{
     border-width: 1px;
 }
 
-.search_input input[type='text']{
+.wd-search_input input[type='text']{
     display: inline-block;
     width: 500px;
     border-radius: 15px;
@@ -30,11 +30,11 @@ body{
     border: 1px solid ;
     background-color: darkgray;
 }
-.search_input {
+.wd-search_input {
     margin-top: 10px;
 
 }
-.search_input i{
+.wd-search_input i{
     position: relative;
     left: 30px;// 这里更改图标的位置
 // top: 1px;
