@@ -1,0 +1,155 @@
+body{
+    background: black;
+}
+.wd-border{
+    border-color: rgb(47,51,54);
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    max-width: 600px;
+}
+
+.wd-search-bar{
+    border-radius: 50px;
+    width: 500px;
+    height: 30px;
+    border-style: solid;
+    color: white;
+    background-color: darkgray;
+    padding-left: 16px;
+    border-width: 1px;
+}
+
+.wd-for-you{
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgb(29,161,242);
+    font-size: 15px;
+    border-bottom: 2px solid rgb(29,161,242);
+}
+
+.wd-other-link{
+    padding: 16px;
+    color: rgb(110,118,125);
+    font-size: 15px;
+}
+
+.wd-trending-topic{
+    color: rgb(110,118,125);
+    font-size: 13px;
+    padding-left: 16px;
+    margin-top: 1px;
+}
+
+.wd-trending-title{
+    color: white;
+    padding-left: 16px;
+    margin-top: 1px;
+}
+
+.wd-trending-tweets{
+    margin-top: 1px;
+    padding-left: 16px;
+    font-size: 13px;
+    color: rgb(110,118,125);
+}
+
+.wd-new-york{
+    color: white;
+    font-size: 13px;
+    padding-left: 16px;
+}
+
+.wd-covid-19{
+    font-size: 13px;
+    color: lightgray;
+    padding-left: 16px;
+}
+
+.wd-covid-update{
+    color: white;
+    padding-left: 16px;
+}
+
+.wd-img1{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    float: right;
+    padding-right: 16px;
+}
+
+
+.wd-border-thin {
+    width: 500px;height: 30px;
+}
+.wd-border-solid {
+    border-style: solid; }
+.wd-border-black {
+    background-color: black;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+}
+.wd-fg-color-white {
+    color: white; }
+.wd-bg-color-dark-gray {
+    background-color: darkgray; }
+
+::placeholder{
+    color: white;
+}
+.wd-border-offset{
+    padding-left: 16px;
+}
+
+.wd-link-color{
+    color: rgb(29,161,242);
+}
+.wd-other-link-color{
+    color: rgb(110,118,125);
+}
+.wd-padding-fat{
+    padding: 16px;
+}
+.wd-font-size{
+    font-size: 15px;
+}
+.wd-topic-size{
+    font-size: 13px;
+}
+.wd-topic-color{
+    color: rgb(110,118,125);
+}
+
+.wd-white-color{
+    color: white;
+}
+.wd-light-gray-color{
+    color: lightgray;
+}
+
+.wd-padding-all-around-16{
+    padding: 16px;
+}
+
+.wd-padding-right{
+    padding-right: 16px;
+}
+.wd-float-right {
+    float: right;
+}
+
+.wd-0-padding p{
+    margin: 0px;
+}
+
+
+.wd-main-panel{
+    max-width: 560px;
+}
+.wd-max-height{
+    max-height: max-content;
+}
