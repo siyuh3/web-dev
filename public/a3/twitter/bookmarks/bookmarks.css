@@ -7,7 +7,7 @@ body{
 }
 
 .wd-border{
-    padding-left: 12px;
+    padding-left: 16px;
     border-color: rgb(47,51,54);
     border-width: 1px;
     border-style: solid;
@@ -17,7 +17,7 @@ body{
 
 .wd-bookmarks{
     margin: 0px;
-    padding-left: 16px;
+    /* padding-left: 16px; */
     padding-top: 12px;
     color: white;
     font-size: 20px;
@@ -27,17 +27,19 @@ body{
     color: lightgray;
     font-size: 13px;
     /* padding-top: 16px; */
-    padding-left: 16px;
+    /* padding-left: 16px; */
     padding-bottom:12px;
 }
 
 .wd-img-avatar{
-    margin-left: 16px;
+    /* margin-left: 16px; */
     margin-top: 12px;
     border-radius: 50%;
     float: left;
 }
-
+.wd-right-top{
+    margin-top: 12px;
+}
 .wd-poster-name{
     color: white;
     font-size: 15px;
@@ -72,11 +74,16 @@ body{
     border-top-right-radius: 20px;
     display:block;
 
+
 }
 .wd-article
 {
     width: 506px;
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
+    /* border-top:  1px solid lightgray; */
+    border-left:  1px solid #494949;
+    border-right:  1px solid #494949;
+    border-bottom:  1px solid #494949;
     margin-right: 12px;
     margin-left: 12px;
     border-top-left-radius: 20px;
@@ -86,7 +93,9 @@ body{
     margin-top: 12px;
 }
 
-
+.wd-article-img{
+    border-bottom:  1px solid #494949;
+}
 
 .wd-second-p-title{
     color: white;
@@ -98,7 +107,7 @@ body{
     color: lightgray;
     padding-left: 12px;
     padding-right: 12px;
-    padding-bottom: 12px;
+    /* padding-bottom: 12px; */
 
 
 }
@@ -124,7 +133,7 @@ body{
 
 .wd-border{
     border-color: rgb(47,51,54);
-    border-width: 1px;
+    /* border-width: 1px; */
     border-style: solid;
     position: relative;
 }
@@ -190,13 +199,13 @@ body{
 }
 
 .flex-container {
-    border-width: 5px;
+    /* border-width: 5px; */
     border-color: black;
     border-style: solid;
     display: flex;
 }
 .flex-box {
-    border: 1px black solid;
+    /* border: 1px black solid; */
 
 }
 

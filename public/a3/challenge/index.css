@@ -296,7 +296,15 @@
 
 
 
-@media (min-width: 0px) and (max-width: 300px) {
+@media (min-width: 600px) and (max-width: 690px) {
+    .first-h2{
+        background-color: #6b433f;
+        color: #5c1880;
+    }
+    .first-p {
+        background-color: #494334;
+        color: #4d885e;
+    }
     body {
         background-color: #205ebb;
         color: #eca70d;
@@ -306,7 +314,15 @@
         color: #030303;
     }
 }
-@media (min-width: 450px) and (max-width: 700px) {
+@media (min-width: 700px) and (max-width: 800px) {
+    .second-h2{
+        background-color: #4d5022;
+        color: #831821;
+    }
+    .second-p {
+        background-color: #5c9cfa;
+        color: #ccc2ab;
+    }
     body {
         background-color: #63afac;
         color: #494334;
@@ -316,8 +332,16 @@
         color: rgba(86, 22, 22, 0.59);
     }
 }
-@media (min-width: 700px) and (max-width: 1000px) {
+@media (min-width: 810px) and (max-width: 900px) {
     body {
+        background-color: rgba(199, 35, 206, 0.28);
+        color: #0c0c0c;
+    }
+    .third-h2{
+        background-color: #d041e7;
+        color: #e5a920;
+    }
+    .third-p {
         background-color: #4d885e;
         color: #98782f;
     }

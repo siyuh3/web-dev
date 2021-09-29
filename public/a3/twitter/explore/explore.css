@@ -5,7 +5,6 @@ body{
     border-color: rgb(47,51,54);
     border-width: 1px;
     border-style: solid;
-
     max-width: 620px;
     height: 100px;
 }
@@ -41,7 +40,6 @@ body{
     color: #ffffff;//这里可以更改图标的颜色
 }
 .wd-for-you{
-    padding-left: 16px;
     padding-right: 16px;
     color: rgb(29,161,242);
     font-size: 15px;
