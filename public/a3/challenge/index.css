@@ -94,8 +94,8 @@
 .gradients-positioned2 {
     background:
             radial-gradient(at bottom, green, black);
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 130px;
     color: red;
 }
 .animation-keyframes {

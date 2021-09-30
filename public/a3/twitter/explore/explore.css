@@ -1,3 +1,4 @@
+
 body{
     background: black;
 }
@@ -6,7 +7,7 @@ body{
     border-width: 1px;
     border-style: solid;
     max-width: 620px;
-    height: 100px;
+    /* height: 124px; */
 }
 
 .wd-search-bar{
@@ -35,45 +36,53 @@ body{
 }
 .wd-search_input i{
     position: relative;
-    left: 30px;// 这里更改图标的位置
-// top: 1px;
-    color: #ffffff;//这里可以更改图标的颜色
+    left: 30px;
+    top: 1px;
+    color:#ffffff;
 }
-.wd-for-you{
+
+.wd-left-16{
+    padding-left: 16px;
+}
+.wd-right-16{
     padding-right: 16px;
+}
+
+.wd-for-you{
     color: rgb(29,161,242);
     font-size: 15px;
+    text-decoration: none;
+}
+.wd-nav-link
+{
+    display: inline;
     border-bottom: 2px solid rgb(29,161,242);
-
+    padding-bottom:4px ;
+    margin-right: 16px;
 }
 
 .wd-other-link{
     padding: 16px;
     color: rgb(110,118,125);
     font-size: 15px;
-
+    text-decoration: none;
 }
 
 .wd-trending-topic{
     color: rgb(110,118,125);
     font-size: 13px;
-    padding-left: 16px;
-
-
 }
 
 .wd-trending-title{
     color: white;
-    padding-left: 16px;
-
 }
 
 .wd-trending-tweets{
-
-    padding-left: 16px;
     font-size: 13px;
     color: rgb(110,118,125);
 }
+
+
 
 .wd-new-york{
     color: white;
@@ -94,11 +103,11 @@ body{
 
 .wd-img1{
     border-radius: 25px;
-    width: 100px;
-    height: 100px;
+    width: 98px;
+    height: 98px;
     border: 1px solid;
-    float: right;
-    margin-right: 16px;
+
+
 }
 
 
@@ -142,8 +151,8 @@ body{
     font-size: 13px;
 }
 .wd-topic-color{
-     color: rgb(110,118,125);
- }
+    color: rgb(110,118,125);
+}
 
 .wd-white-color{
     color: white;
@@ -173,5 +182,38 @@ body{
 }
 .wd-max-height{
     max-height: max-content;
+}
+
+.wd-mainWrapper{
+    width: 100%;
+    padding-top: 12px;
+    /* padding-bottom: 12px; */
+}
+.wd-col{
+    float: left;
+    width: 70%;
+}
+.wd-col-right{
+    float: right;
+    width: 116px;
+
+}
+.wd-clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.wd-dot{
+    /* background-color: bisque; */
+    text-align: right;
+    color: #fff;
+    margin-top: -12px;
+}
+.wd-span-dot{
+    color: #ffffff;
+    text-align: right;
+    vertical-align: top;
+    height: 21px;
+    line-height: 21px;
 }
 
