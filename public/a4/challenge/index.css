@@ -1,0 +1,354 @@
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.rotate-list2 {
+    transform: rotate(-12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+
+.rotate-image {
+    transform: rotate(-10deg);
+}
+
+.rotate-image2{
+    transform: rotate(25deg);
+}
+
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;}
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;}
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-linear2 {
+    background: linear-gradient(green, blue);
+    width: 200px;
+    height: 200px;
+}
+.gradients-radial {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+.gradients-radial2 {
+    background: radial-gradient(purple,gray);
+    width: 200px;
+    height: 200px;
+}
+.gradients-positioned {
+    background:
+            radial-gradient(at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.gradients-positioned2 {
+    background:
+            radial-gradient(at bottom, green, black);
+    width: 300px;
+    height: 130px;
+    color: red;
+}
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+    }
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+}
+
+.animation-keyframes2 {
+    position: relative;
+    top: 0px;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    animation-name: slidein2;
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    color: purple;
+}
+
+@keyframes slidein2 {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 30%;
+        margin-left: 100%;
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+        color: greenyellow;
+    }
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 200%;
+        margin-left: 25%;
+        width: 300px;
+        height: 300px;
+        background-color: fuchsia;
+        color: purple;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 70%;
+        margin-left: 0%;
+        width: 150px;
+        height: 150px;
+        background-color: pink;
+        color: black;
+    }
+}
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1 {
+    background-color: yellow;
+}
+.flex-box-2 {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3 {
+    background-color: red;
+    color: white;
+}
+
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+}
+.flex-container1 {
+    display: flex;
+    justify-content: center;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+
+
+}
+
+.flex-box-11 {
+    background-color: yellow;
+}
+.flex-box-22 {
+    background-color: blue;
+    color: white;
+}
+.flex-box-33 {
+    background-color: red;
+    color: white;
+}
+
+
+
+.flex-container2 {
+    display: flex;
+    justify-content: end;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-container22 {
+    display: flex;
+    justify-content: space-around;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+
+.flex-container3 {
+    display: flex;
+    justify-content: space-between;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-container4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-container5 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-container6 {
+    display: flex;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-container6 > .flex-box {
+    flex-basis: 100%;
+}
+
+
+
+
+
+
+
+@media (min-width: 600px) and (max-width: 690px) {
+    .first-h2{
+        background-color: #6b433f;
+        color: #5c1880;
+    }
+    .first-p {
+        background-color: #494334;
+        color: #4d885e;
+    }
+    body {
+        background-color: #205ebb;
+        color: #eca70d;
+    }
+    .media-query1 {
+        background-color: #ff1500;
+        color: #030303;
+    }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+    .second-h2{
+        background-color: #4d5022;
+        color: #831821;
+    }
+    .second-p {
+        background-color: #5c9cfa;
+        color: #ccc2ab;
+    }
+    body {
+        background-color: #63afac;
+        color: #494334;
+    }
+    .media-query2 {
+        background-color: #501d18;
+        color: rgba(86, 22, 22, 0.59);
+    }
+}
+@media (min-width: 810px) and (max-width: 900px) {
+    body {
+        background-color: rgba(199, 35, 206, 0.28);
+        color: #0c0c0c;
+    }
+    .third-h2{
+        background-color: #d041e7;
+        color: #e5a920;
+    }
+    .third-p {
+        background-color: #4d885e;
+        color: #98782f;
+    }
+    .media-query3 {
+        background-color: #5c1880;
+        color: #a62b2b;
+    }
+}
+
+
