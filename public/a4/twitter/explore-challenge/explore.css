@@ -1,3 +1,12 @@
+body {
+    background-color: #000;
+}
+* {
+    color: #ccc;
+}
+.centerbox b{
+    color: #fff;
+}
 .btn-group-lg > .btn,
 .btn-lg {
     padding-left: 4.6rem !important;
@@ -44,9 +53,12 @@
     left: 539px;
 }
 .searchbox {
+    background-color: #000;
     display: flex;
     flex-wrap: nowrap;
     position: relative;
+    border-radius: 20px;
+    border: 0px;
 }
 .searchbox i {
     position: absolute;
@@ -55,11 +67,58 @@
 }
 .searchbox input {
     flex-grow: 1;
+    background-color: #666;
+}
+.searchbox input::placeholder {
+    color: #ccc;
+}
+.centerbox {
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    padding: 0;
+}
+.list-group-item.active {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-weight: bold;
+}
+.list-group-item.active span {
+    font-weight: bold;
 }
 .tweet {
     border-radius: 30px;
     display: block;
     width: 100%;
+}
+.list-group-item {
+    background-color: #000;
+}
+.borderbox {
+    border-bottom: 1px solid #999;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.nav-pills a {
+    color: #ccc;
+    border-bottom: 2px solid #000;
+}
+.nav-pills a:hover {
+    color: #fff;
+    border-bottom: 2px solid #0d6efd;
+}
+.nav-pills .nav-link.active {
+    color: #fff;
+    background-color: #000;
+    border-bottom: 2px solid #0d6efd;
+}
+.pull-right {
+    float: right;
+    text-align: right;
+}
+@media screen and (min-width: 980px) {
+    .searchline {
+        padding: 0 30px;
+    }
 }
 @media screen and (max-width: 1024px) {
     .list-group-item span {
@@ -70,6 +129,7 @@
         text-align: center;
     }
     .tweet {
+        width: 60px;
         text-align: center;
         height: 40px;
         border-radius: 20px;
@@ -116,10 +176,30 @@
         text-align: center;
     }
 }
-.tr {
-    text-align: right;
+
+.rightblock{
+    border-radius: 20px;
 }
-.fr {
+.rightblock .btn-primary{
+    color: #817f7f !important;
+    background: #f5f5f5 !important;
+    border: 0;
+}
+
+.rightblock li{
+    background-color: #3e3e3e;
+    border: 1px #3e3e3e solid;
+}
+.searchline input{
+    border: 0;
+}
+.rightblock li .col-5 button{
     float: right;
+}
+.leftCon{
+    padding-right: 20px;
+}
+.rightCon{
+    padding-left: 60px;
 }
 
