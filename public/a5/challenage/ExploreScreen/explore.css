@@ -2,9 +2,7 @@
 
 
 
-.change{
-    color: #6e767d;
-}
+
 .centerbox {
     color: #fff;
 }
@@ -193,4 +191,9 @@
 }
 .rightblock li .col-5 button{
     float: right;
+}
+a:link,a:visited{
+    text-decoration:none;  /*超链接无下划线*/
+}
+a{ color: #ffffff
 }

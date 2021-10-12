@@ -4,13 +4,14 @@ const PostSummaryItem=(post)=>{
             <div class="row p-lg-3">
                         <div class="col-10 mt-sm-2">
                             <div class="wd-trending-topic">${post.topic}</div>
-                            <b>${post.userName}</b>
-                            <i class="bi bi-patch-check-fill">
-                                -
-                                <span class="change">${post.time}</span>
+                            <b class="text-white">${post.userName}</b>
+                            <i class="bi bi-patch-check-fill text-white">
+                                
                             </i>
+                            -
+                                <span>${post.time}</span>
                             <br>
-                            <b>${post.title}
+                            <b class="text-white">${post.title}
                             </b>
                         </div>
     

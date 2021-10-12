@@ -41,7 +41,7 @@ const ExploreComponent = () => {
                 <span class="overlap2"><b>SpaceX's Starship</b></span>
            </div>
            <!-- image with overlaid text -->
-           <div class="borderbox mt-sm-2 centerbox">
+           <div class="borderbox mt-sm-2">
                 ${PostSummaryList()}
            </div>
             
