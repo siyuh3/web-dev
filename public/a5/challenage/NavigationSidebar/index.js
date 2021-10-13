@@ -5,11 +5,11 @@ const NavigationSidebar = (p) => {
                     <i class="fab fa-twitter"></i>
                 </a>
             <!-- continue the rest of the list -->
-                <a id="" class="list-group-item" href="../HomeScreen/home.html#home">
+                <a id="" class="list-group-item ${p == 'home' ? 'active' : ''}" href="../HomeScreen/home.html">
                     <i class="fas fa-home"></i>
                     <span>Home</span>
                 </a>
-                <a class="list-group-item active" href="../ExploreScreen/explore.html#explore">
+                <a class="list-group-item ${p == 'explore' ? 'active' : ''}" href="../ExploreScreen/explore.html">
                     <i class="fa fa-hashtag"></i>
                     <span>Explore</span>
                 </a>
@@ -46,20 +46,21 @@ const NavigationSidebar = (p) => {
                     Tweet</a>
             </div>
     `);}
-$(document).ready(()=>{
-    const href = window.location.href;
-    const activeName = href.split('#')[1];
-    if(href.indexOf('.html#') != -1){
-        $(".list-group").children().each((index,item)=>{
-            if($(item).attr('href') && $(item).attr('href').indexOf(activeName) != -1){
-                $(item).addClass('active').siblings().removeClass('active')
-            }else{
-                $(item).removeClass('active')
-            }
-        })
-    }else{
-        console.log($($(".list-group").children()[1]).addClass('active')).siblings().removeClass('active')
-    }
-})
+
+// $(document).ready(()=>{
+//     const href = window.location.href;
+//     const activeName = href.split('#')[1];
+//     if(href.indexOf('.html#') != -1){
+//         $(".list-group").children().each((index,item)=>{
+//             if($(item).attr('href') && $(item).attr('href').indexOf(activeName) != -1){
+//                 $(item).addClass('active').siblings().removeClass('active')
+//             }else{
+//                 $(item).removeClass('active')
+//             }
+//         })
+//     }else{
+//         console.log($($(".list-group").children()[1]).addClass('active')).siblings().removeClass('active')
+//     }
+// })
 
 export default NavigationSidebar;

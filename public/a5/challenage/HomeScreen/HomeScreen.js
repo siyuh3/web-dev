@@ -4,11 +4,11 @@ import HomeComponent from "./HomeComponent.js";
 
 
 (function ($) {
-    $('#wd-explore').append(`
+    $('#wd-home').append(`
         <div class="container">
             <div class="row mt-2">
                 <div class="col-2 col-lg-1 col-md-2 col-xl-2 ">
-                    ${NavigationSidebar()}
+                    ${NavigationSidebar('home')}
                 </div>
                 <div class="col-6 col-lg-7 col-md-10 col-sm-10 col-xl-6 centerbox">
                     ${HomeComponent()}
@@ -20,14 +20,14 @@ import HomeComponent from "./HomeComponent.js";
         </div>
     `);
 
-    const href = window.location.href;
-    const activeName = href.split('#')[1];
-    $(".list-group").children().each((index,item)=>{
-        if($(item).attr('href') && $(item).attr('href').indexOf(activeName) != -1){
-            $(item).addClass('active')
-        }else{
-            $(item).removeClass('active')
-        }
-    })
+    // const href = window.location.href;
+    // const activeName = href.split('#')[1];
+    // $(".list-group").children().each((index,item)=>{
+    //     if($(item).attr('href') && $(item).attr('href').indexOf(activeName) != -1){
+    //         $(item).addClass('active')
+    //     }else{
+    //         $(item).removeClass('active')
+    //     }
+    // })
 
 })($);
