@@ -20,4 +20,13 @@ import WhoToFollowList from "../WhoToFollowList/index.js";
             </div>
         </div>
     `);
+    const href = window.location.href;
+    const activeName = href.split('#')[1];
+    $(".list-group").children().each((index,item)=>{
+        if($(item).attr('href') && $(item).attr('href').indexOf(activeName) != -1){
+            $(item).addClass('active')
+        }else{
+            $(item).removeClass('active')
+        }
+    })
 })($);
