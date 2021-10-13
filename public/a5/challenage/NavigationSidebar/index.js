@@ -47,20 +47,20 @@ const NavigationSidebar = (p) => {
             </div>
     `);}
 
-// $(document).ready(()=>{
-//     const href = window.location.href;
-//     const activeName = href.split('#')[1];
-//     if(href.indexOf('.html#') != -1){
-//         $(".list-group").children().each((index,item)=>{
-//             if($(item).attr('href') && $(item).attr('href').indexOf(activeName) != -1){
-//                 $(item).addClass('active').siblings().removeClass('active')
-//             }else{
-//                 $(item).removeClass('active')
-//             }
-//         })
-//     }else{
-//         console.log($($(".list-group").children()[1]).addClass('active')).siblings().removeClass('active')
-//     }
-// })
+    // $(document).ready(()=>{
+    //     const href = window.location.href;
+    //     const activeName = href.split('#')[1];
+    //     if(href.indexOf('.html#') != -1){
+    //         $(".list-group").children().each((index,item)=>{
+    //             if($(item).attr('href') && $(item).attr('href').indexOf(activeName) != -1){
+    //                 $(item).addClass('active').siblings().removeClass('active')
+    //             }else{
+    //                 $(item).removeClass('active')
+    //             }
+    //         })
+    //     }else{
+    //         console.log($($(".list-group").children()[1]).addClass('active')).siblings().removeClass('active')
+    //     }
+    // })
 
 export default NavigationSidebar;
