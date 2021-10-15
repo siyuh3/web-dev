@@ -3,12 +3,12 @@ const PostItem=(post)=>{
         <div class="borderbox">
             <div class="row p-lg-3">
                 <div class="col-1">
-                    <img class="rounded-circle" src="${post.avatarIcon}" alt="act" width="40px" height="40px">
+                    <img class="rounded-circle d-none d-md-block" src="${post.avatarIcon}" alt="act" width="40px" height="40px">
                 </div>
                 
                 <div class="col-10">
                         <div>
-                            <b>${post.userName}</b>
+                            <b >${post.userName}</b>
                             <i class="bi bi-patch-check-fill">
                             <span class="gray">${post.handle}</span>
                             -
@@ -23,7 +23,7 @@ const PostItem=(post)=>{
                             ${post.own}
                         </div>
                         <div class="article">
-                            <img class="photo borderbox" src="${post.photo}" alt="act">
+                            <img class="photo borderbox" src="${post.photo}" alt="act" width="100%">
                             <div class="mt-lg-2">${post.title}</div>
                             <div class="gray">${post.detail}</div>
                             <div class="gray"><i class="bi bi-link-45deg "></i>${post.link}</div>
