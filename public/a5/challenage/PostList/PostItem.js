@@ -24,9 +24,11 @@ const PostItem=(post)=>{
                         </div>
                         <div class="article">
                             <img class="photo borderbox" src="${post.photo}" alt="act" width="100%">
-                            <div class="mt-lg-2">${post.title}</div>
-                            <div class="gray">${post.detail}</div>
-                            <div class="gray"><i class="bi bi-link-45deg "></i>${post.link}</div>
+                            ${post.title.length>0? `<div class="mt-lg-2">${post.title}</div>
+                            <div class="gray">${post.detail}</div><div class="gray"><i class="bi bi-link-45deg ">
+                            </i>${post.link}</div>`: ''}
+                            
+                           
                         </div>
                         <div class="row mt-lg-2">
                             <div class="col-3 gray"><i class="bi bi-chat"></i>&nbsp${post.comment}</div>
