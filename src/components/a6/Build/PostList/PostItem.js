@@ -1,5 +1,4 @@
 const PostItem = (ele) => {
-    console.log(ele)
     return (
         // eslint-disable-next-line array-callback-return
         <div className="borderbox" >

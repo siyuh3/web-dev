@@ -2,8 +2,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const NavigationSidebar = (active) => {
-    console.log(active)
-    const isActive = (active, path) => `list-group-item ${active.active === path ? 'active' : ''}`
     return (
         <>
             <div className="list-group">
