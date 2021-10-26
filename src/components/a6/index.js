@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-const A6 = () => {
+const A6 = () =>   {
     return (
         <>
             <h2>Assignment 6</h2>
