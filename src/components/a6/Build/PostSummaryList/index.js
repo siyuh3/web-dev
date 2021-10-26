@@ -6,9 +6,9 @@ const PostSummaryList = () =>{
     return(
         <>
         {
-            post.map( post => {
+            post.map( (post, key) => {
                 return(
-                    <PostSummaryItem post={post}/>
+                    <PostSummaryItem key={key} post={post}/>
                 );
             })
         }

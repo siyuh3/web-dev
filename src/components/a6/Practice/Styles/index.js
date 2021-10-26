@@ -7,19 +7,19 @@ const Styles = () => {
         padding: "10px"
     }
     const bgBlue = {
-        "background-color": "lightblue",
+        "backgroundColor": "lightblue",
         "color": "black",
         ...padding10px
     };
     const bgRed = {
-        "background-color": "lightcoral",
+        "backgroundColor": "lightcoral",
         ...colorBlack,
         ...padding10px
     };
     return(
         <div>
             <h1>Styles</h1>
-            <div style={{"background-color": "lightyellow",
+            <div style={{"backgroundColor": "lightyellow",
                 "color": "black", padding: "10px"}}>
                 Yellow background</div>
             <div style={bgRed}>
