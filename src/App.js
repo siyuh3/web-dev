@@ -19,17 +19,16 @@ function App() {
                 <Route path="/a6/twitter/home" component={HomeScreen}/>
                 <Route path="/a6/twitter/explore" component={ExploreScreen}/>
                 <Route path="/a6/hello" exact={true}>
-                <HelloWorld/>
+                    <HelloWorld/>
                 </Route>
                 <Route path={["/", "/a6", "/a6/practice"]} exact={true}>
-                <Practice/>
+                    <Practice/>
                 </Route>
                 <Route path="/a6/build" exact={true}>
-                <Build/>
+                    <Build/>
                 </Route>
             </div>
         </BrowserRouter>
     );
 }
 export default App;
-
