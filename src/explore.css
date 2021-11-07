@@ -44,9 +44,7 @@
     padding-left: 16px;
     padding-top: 16px;
 }
-.form-control {
-    width: 110%;
-}
+
 .search {
     position: absolute;
     left: 539px;
@@ -191,4 +189,16 @@
 }
 .rightblock li .col-5 button{
     float: right;
+}
+
+.margin-left{
+    margin-left: 16px;
+}
+
+.float-right{
+    float: right;
+}
+
+.text-blue{
+    color: rgba(24, 97, 182, 0.78);
 }
