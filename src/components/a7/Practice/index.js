@@ -14,7 +14,7 @@ const Index = () => {
             <Styles/>
             <Classes/>
             <Link to="/a7/hello">
-                Hello
+                Hello(All previous homeworks inside)
             </Link> |
             <Link to="/a7/practice">
                 Practice
@@ -24,8 +24,8 @@ const Index = () => {
                 Home
                 |
             </Link>
-            <Link to="/a7/twitter/explore">
-                Explore
+            <Link to="/a7/twitter/profile">
+                Profile
             </Link>
             <ReduxExamples/>
         </>

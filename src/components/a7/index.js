@@ -4,9 +4,9 @@ import {Link} from "react-router-dom";
 const A6 = () => {
     return (
         <>
-            <h2>Assignment 6</h2>
+            <h2>Assignment 7</h2>
             <Link to="/a7/hello">
-                Hello
+                Hello(All previous homeworks inside)
             </Link> | &nbsp;
             <Link to="/a7/practice">
                 Practice
