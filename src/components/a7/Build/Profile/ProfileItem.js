@@ -34,6 +34,7 @@ const ProfileItem = ({profile}) => {
                   <h4>{profile.firstName}{' '}{profile.lastName}</h4>
                   <span>5196 Tweets</span>
                   <span>@{profile.handle}</span>
+                  <span>{profile.website}</span>
               </div>
               <div className="row mt-2">
                   <div>{profile.bio}</div>

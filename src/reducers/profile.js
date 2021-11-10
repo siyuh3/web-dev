@@ -8,8 +8,7 @@ const profile = (state = initialState, action) => {
     switch (action.type){
         case 'edit-profile':
             return {
-                ...state,
-                profile: action.profile
+                profile: [action.profile]
             };
             break
         case 'discard-change':
