@@ -6,6 +6,11 @@ const initialState = {
 
 const profile = (state = initialState, action) => {
     switch (action.type){
+        case 'get-current-profile':
+            return({
+                profile: action.profile
+            })
+           break;
         case 'edit-profile':
             return {
                 profile: [action.profile]

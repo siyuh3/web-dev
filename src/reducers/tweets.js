@@ -6,6 +6,11 @@ const initialState = {
 
 const tweets = (state = initialState, action) => {
     switch (action.type) {
+        case 'fetch-all-tweets':
+            return({
+                tweets: action.tweets
+            })
+            break;
         case 'like-tweet':
             return ({
                 tweets: state.tweets.map(tweet => {
@@ -37,7 +42,7 @@ const tweets = (state = initialState, action) => {
                 "verified": false,
                 "handle": "ReactJS",
                 "time": "2h",
-                "tweet": action.tweet,
+                "tweet": action.tweets.tweet,
                 "avatar-image": "../../../images/headshot.JPG",
                 "logo-image": "../../../images/headshot.JPG",
                 "stats": {
@@ -46,6 +51,7 @@ const tweets = (state = initialState, action) => {
                     "likes": 345
                 },
             };
+            console.log(action.tweets);
             return ({
                 tweets: [
                     tweet,

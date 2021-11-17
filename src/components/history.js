@@ -55,6 +55,29 @@ const History = () => {
                     </Link>
                 </li>
             </ul>
+            <h3>Assignment 7</h3>
+            <ul>
+                <li>
+                    <Link to="/a7/practice">
+                        practice
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/a7/hello">
+                        Hello
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/a7/twitter/home">
+                        Build
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/a7/twitter/profile">
+                        challenge
+                    </Link>
+                </li>
+            </ul>
         </div>
     )
 }
