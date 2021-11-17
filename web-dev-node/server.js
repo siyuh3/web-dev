@@ -24,4 +24,4 @@ movieService(app);
 require('./service/tweeter-service')(app);
 require('./service/profile-service')(app);
 
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
