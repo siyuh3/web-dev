@@ -23,5 +23,5 @@ const movieService = require("./service/movies-service")
 movieService(app);
 require('./service/tweeter-service')(app);
 require('./service/profile-service')(app);
-
-app.listen(process.env.PORT || 4000);
+const port = process.env.PORT || 4000;
+app.listen(port);
