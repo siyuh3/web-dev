@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 
-const movieApiUrl = 'http://localhost:4000/api/movies';
+const movieApiUrl = process.env.PORT+'/api/movies'
 
 const MovieApiClient =() => {
     const  [movies, setMovies] = useState([]);
@@ -14,7 +14,7 @@ const MovieApiClient =() => {
     const onMovieTitleChange = (event) =>
         setMovie({...movie, title: event.target.value});
     const createMovieClickHandler = () =>
-        fetch('http://localhost:4000/api/movies', {
+        fetch(movieApiUrl, {
             method: 'POST',
             body: JSON.stringify(movie),
             headers: {
@@ -26,7 +26,7 @@ const MovieApiClient =() => {
 
 
     const deleteMovie = (movie) =>
-        fetch(`http://localhost:4000/api/movies/${movie._id}`, {
+        fetch(`${movieApiUrl}/${movie._id}`, {
             method: 'DELETE'
         })
             .then(response => response.json())
@@ -35,7 +35,7 @@ const MovieApiClient =() => {
 
 
     const saveMovie = () =>
-        fetch(`http://localhost:4000/api/movies/${movie._id}`, {
+        fetch(`${movieApiUrl}/${movie._id}`, {
             method: 'PUT',
             body: JSON.stringify(movie),
             headers: {
