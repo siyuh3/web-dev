@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
-
-const movieApiUrl = process.env.PORT;
+let movieApiUrl = 'https://web-deb-node.herokuapp.com/api/movies'
+if (process.env.DEV === "TRUE"){
+    movieApiUrl = 'http://localhost:4000/api/movies';
+}
 
 const MovieApiClient =() => {
     const  [movies, setMovies] = useState([]);
