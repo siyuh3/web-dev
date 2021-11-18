@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 
-const movieApiUrl = process.env.PORT+'/api/movies'
+const movieApiUrl = process.env.PORT+'/api/movies' || 'http://localhost:4000/api/movies';
 
 const MovieApiClient =() => {
     const  [movies, setMovies] = useState([]);
