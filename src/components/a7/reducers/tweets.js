@@ -42,7 +42,7 @@ const tweets = (state = initialState, action) => {
                 "verified": false,
                 "handle": "ReactJS",
                 "time": "2h",
-                "tweet": action.tweets.tweet,
+                "tweet": action.tweet,
                 "avatar-image": "../../../images/headshot.JPG",
                 "logo-image": "../../../images/headshot.JPG",
                 "stats": {
