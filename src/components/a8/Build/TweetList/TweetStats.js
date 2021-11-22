@@ -3,9 +3,9 @@ import {useDispatch} from "react-redux";
 import {likeTweet} from "../../../../services/twitterService";
 
 const TweetStats = ({tweet}) => {
-    const dispatc = useDispatch();
+    const dispatch = useDispatch();
     const likeClickHandler = () => {
-        likeTweet(dispatc, tweet);
+        likeTweet(dispatch, tweet);
     };
     return (<div className="row mt-2">
         <div className="col">

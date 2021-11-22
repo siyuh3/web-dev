@@ -22,12 +22,13 @@ export const postNewTweet = (dispatch, newTweet) =>
         }
     })
         .then(response => response.json())
-        .then(tweets =>
+        .then(tweet =>
             dispatch({
                 type: 'create-tweet',
-                tweets
+                tweet
             })
         );
+
 
 export const deleteTweet = (dispatch, tweet) =>
     fetch(`${TWEET_API}/${tweet._id}`, {
@@ -46,3 +47,4 @@ export const likeTweet = (dispatch, tweet) =>
                 type: 'like-tweet',
                 tweet
             }));
+
