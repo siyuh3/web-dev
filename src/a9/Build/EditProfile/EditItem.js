@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
-import {updateCurrentProfile} from "../../../../services/profileService";
+import {updateCurrentProfile} from "../../services/profileService";
 
 const EditItem = ({profile})=>{
     const dispatch = useDispatch();
@@ -43,7 +43,7 @@ const EditItem = ({profile})=>{
                     <h4>Edit profile</h4>
                 </div>
                 <div className="col-1">
-                    <Link to="/a8/twitter/profile">
+                    <Link to="/a9/twitter/profile">
                         <button onClick={saveClickHandler}
                                 className="rounded-pill margin-left">Save</button>
                     </Link>

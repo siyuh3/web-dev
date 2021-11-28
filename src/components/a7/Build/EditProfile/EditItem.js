@@ -56,39 +56,39 @@ const EditItem = ({profile})=>{
             </div>
             <div>
                 <form>
-                    <div className="form-group ">
+                    <div className="form-group" >
                         <label htmlFor="formGroupExampleInput">Name</label>
                         <input onChange={(event) =>
                             handleChange({...localProfile, firstName: event.target.value})}
-                               type="text" className="form-control" id="name"
+                               type="text" className="form-control bg-black text-white border" id="name"
                                value={localProfile.firstName}/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="formGroupExampleInput2">Bio</label>
                         <input onChange={(event) =>
                             handleChange({...localProfile, bio: event.target.value})}
-                               type="text" className="form-control" id="bio"
+                               type="text" className="form-control bg-black text-white border" id="bio"
                                value={localProfile.bio}/>
                     </div>
                     <div className="form-group" >
                         <label htmlFor="formGroupExampleInput2">Location</label>
                         <input onChange={(event) =>
                             handleChange({...localProfile, location: event.target.value})}
-                               type="text" className="form-control" id="location"
+                               type="text" className="form-control bg-black text-white border" id="location"
                                value={localProfile.location}/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="formGroupExampleInput2">Website</label>
                         <input onChange={(event) =>
                             handleChange({...localProfile, website: event.target.value})}
-                               type="text" className="form-control" id="website"
+                               type="text" className="form-control bg-black text-white border" id="website"
                                value={localProfile.website}/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="formGroupExampleInput2">Birth date</label>
                         <input onChange={(event) =>
                             handleChange({...localProfile, dateOfBirth: event.target.value})}
-                               type="text" className="form-control" id="birthDate"
+                               type="text" className="form-control bg-black text-white border" id="birthDate"
                                placeholder="Another input"
                                value={localProfile.dateOfBirth}/>
                     </div>
